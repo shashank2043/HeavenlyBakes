@@ -57,7 +57,7 @@ nav {
   gap: 20px;
 }
 #nav_three > i {
-  font-size: 35px;
+  font-size: 30px;
   cursor: pointer;
 }
 #cart_quantity {
@@ -529,7 +529,7 @@ footer > button:hover {
   font-weight: 600;
   cursor: pointer;
 }
-.items_info{
+.items_info {
   display: grid;
   align-items: center;
   justify-content: space-between;
