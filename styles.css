@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  background-color: #faf4eb;
+  overflow-x: hidden;
+}
+#home_page {
+  background-color: #faf4eb;
+  /* background: rgba(255, 228, 196, 0.314); */
+}
+nav {
+  /* border: 2px solid black; */
+  height: 15vh;
+  display: flex;
+  padding: 0px 150px;
+  color: #3c2c23;
+  background-color: bisque;
+}
+#nav_one {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_one > a > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+#nav_one > a {
+  text-decoration: none;
+  color: black;
+}
+#nav_two {
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+#nav_two > a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+#nav_three {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#nav_three > i {
+  font-size: 35px;
+  cursor: pointer;
+}
+#cart_quantity {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  right: 26px;
+  bottom: 20px;
+  color: #3c2c23;
+  font-weight: 500;
+  font-size: 13px;
+}
+#cart_price {
+  font-size: 18px;
+  color: #3c2c23;
+  font-weight: 600;
+}
+
+header {
+  height: 65vh;
+  background: url("./assets/pasted-image.png") no-repeat center;
+  background-size: cover;
+  margin: 20px 100px;
+  filter: brightness(70%);
+  border-radius: 10px;
+}
+
+#bakery_description {
+  height: 25vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#bakery_description > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+#bakery_description > p {
+  /* font-weight: 500; */
+}
+
+#bakery_description > button {
+  padding: 10px 30px;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+#bakery_description > button:hover {
+  background-color: #ff6600;
+  cursor: pointer;
+}
+#bakery_items {
+  /* height: 50vh; */
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bakery_items > h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  margin: 30px;
+}
+
+#items_container {
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.items > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  filter: blur(1px);
+}
+
+.items > img:hover {
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+
+.items > p {
+  margin-top: 15px;
+}
+
+footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+footer > button {
+  padding: 10px 30px;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+footer > button:hover {
+  background-color: #ff6600;
+  cursor: pointer;
+}
+
+/*! About Us Styles */
+
+#about_us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about_us > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+#about_us > p {
+  padding: 0px 30px;
+  text-align: center;
+}
+
+#about_page_description {
+  margin-top: 40px;
+  /* border: 2px solid blue; */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+#desc_one,
+#desc_three {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#desc_one > h1,
+#desc_three > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+#desc_one > p,
+#desc_three > p {
+  padding: 0px 20px;
+  text-align: center;
+}
+#desc_two {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#desc_two > img {
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+}
+#visit_section {
+  display: flex;
+}
+#visit_one {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#visit_one > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+#visit_one > button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 1s 0s ease;
+}
+#visit_one > button:hover {
+  background-color: orangered;
+}
+#visit_two {
+  flex-basis: 60%;
+  /* padding: 30px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visit_two > img {
+  border-radius: 30px;
+  width: 640px;
+  height: 360px;
+  margin: 50px;
+}
+
+/*! Contact page styles */
+#contact_page {
+  display: flex;
+  height: 85vh;
+}
+
+#contact_one {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#contact_one > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+#contact_one > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  gap: 20px;
+}
+#contact_one > form > input {
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.414);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+}
+#contact_one > form > input:focus,
+#contact_one > form > textarea:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+
+#contact_one > form > textarea {
+  border: 1px solid rgba(0, 0, 0, 0.414);
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact_one > form > [type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 1s 0s ease;
+}
+#contact_one > form > [type="submit"]:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+#contact_two {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact_two > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+#contact_two > img {
+  height: 300px;
+}
+#contact_two > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact_two > div > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*! Menu Styles */
+#menu_filter {
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#menu_filter > h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+#filter_btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#filter_btns > button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.176);
+  font-weight: 500;
+  font-size: 16px;
+}
+#filter_btns > .active {
+  color: white;
+  background-color: orange;
+}
+
+#menu_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(0, 0, 0, 0.033);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.card_one {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.card_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.card_img > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card_info > h2 {
+  padding: 0px 5px;
+  text-align: center;
+}
+.card_info > p {
+  text-align: center;
+  font-weight: 600;
+}
+.card_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 10px 0px 40px;
+}
+.card_quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0px;
+}
+.minus,
+.plus {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  background-color: chocolate;
+  color: white;
+  user-select: none;
+}
+.quantity {
+  font-weight: 700;
+  font-size: 20px;
+}
+.addToCart > button {
+  background-color: chocolate;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 1s 0s ease;
+  padding: 7px 20px;
+}
+
+/* !Sidebar Styles */
+#sidebar {
+  height: 100vh;
+  width: 350px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: -350px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: all 800ms 0s ease;
+}
+
+#sidebar_one {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#sidebar_one > h1 {
+  font-weight: 400px;
+}
+
+#close_sidebar {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.items_info{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  row-gap: 8px;
+  padding: 5px 10px;
+}
+.items_info > h2 {
+  font-size: 18px;
+}
+.items_info > p {
+  font-size: 15px;
+}
+.items_info > h3 {
+  font-size: 15px;
+}
+.items_info > button {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  justify-self: flex-end;
+  cursor: pointer;
+}
